@@ -1,31 +1,33 @@
 <div class="group">
   <h2>Path param passing</h2>
   <div class="tile">
-    <a [routerLink]="['/pp-details', 'item1']">
-      Item 1 - pass data through &lt;a&gt; tag
-    </a>
+    <span> Item 1 - pass data through &lt;a&gt; tag </span>
+    <a [routerLink]="['/pp-details', 'item1']">Go </a>
   </div>
-  <div class="tile" (click)="pathParamNavigation('item2')">
+  <div class="tile">
     Item 2 - pass data through navigate
+    <button (click)="pathParamNavigation('item2')">Go</button>
   </div>
 </div>
-<div class="group">
+<div class="group margin-around">
   <h2>Query param passing</h2>
   <div class="tile">
+    <span> Item 3 - pass data through &lt;a&gt; tag </span>
     <a
       [routerLink]="['/qp-details']"
       [queryParams]="{ itemDetails: 'item3', somethingElse: 123 }"
-    >
-      Item 3 - pass data through &lt;a&gt; tag
+      >Go
     </a>
   </div>
-  <div class="tile" (click)="queryParamNavigation('item4')">
+  <div class="tile">
     Item 4 - pass data through navigate
+    <button (click)="queryParamNavigation('item4')">Go</button>
   </div>
 </div>
 <div class="group">
   <h2>State Param passing</h2>
-  <div class="tile" (click)="routeStateNavigation('item5')">
+  <div class="tile">
     Item6 - pass data through navigate
+    <button (click)="routeStateNavigation('item5')">Go</button>
   </div>
 </div>

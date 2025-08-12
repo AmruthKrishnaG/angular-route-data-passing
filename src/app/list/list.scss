@@ -3,3 +3,11 @@ div {
   margin: 10px;
   border: 1px solid black;
 }
+.group {
+  &.margin-around {
+    margin: 40px 10px;
+  }
+}
+.tile {
+  background-color: lightgrey;
+}

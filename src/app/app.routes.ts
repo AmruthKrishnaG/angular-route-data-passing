@@ -5,6 +5,7 @@ import { QueryParamDetails } from './query-param-details/query-param-details';
 import { RouteStateDetails } from './route-state-details/route-state-details';
 
 export const routes: Routes = [
+  { path: '', redirectTo: 'list', pathMatch: 'full' },
   {
     path: 'list',
     component: List,
